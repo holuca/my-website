@@ -4,7 +4,8 @@ import Message from './Message';
 
 
 function App(){
-  return <h1>Hello Wolrd</h1>
+  
+  return <div><Message/></div>
 }
 
 export default App;
