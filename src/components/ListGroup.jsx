@@ -1,13 +1,34 @@
-function ListGroup(){
-    return <ul class="list-group">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifrth item</li>
-    </ul>;
+import {MouseEvent} from "react";
 
- 
+const items = [
+  "An item",
+  "A second item",
+  "A third item",
+  "A fourth item",
+  "and a fifth item",
+];
+
+let selectedIndex = 0;
+
+const handleClick = (event) => console.log(event.altKey)
+
+function ListGroup() {
+  return (
+    <div>
+      <h1>List</h1>
+      <ul className="list-group">
+        {items.map((item, index) => (
+          <li
+            className={selectedIndex === index ? 'list-group-item active' : 'list-group-item'}
+            key={item}
+            onClick={handleClick}
+          >
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default ListGroup;
