@@ -1,0 +1,96 @@
+.menu {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 220px;
+  padding: 10px;
+
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 50;
+}
+
+.menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.menu-link {
+  width: 100%;
+  text-align: left;
+  padding: 10px 10px;
+
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  background: var(--menu-link-bg);
+  color: var(--accent-contrast);
+
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.menu-bottom {
+  margin-top: 6px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.menu-label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.menu-lang {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.pill {
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--menu-pill-border);
+  background: var(--menu-pill-bg);
+  color: var(--accent-contrast);
+  cursor: pointer;
+}
+
+.pill.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+/* Overlay */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--overlay);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 40;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Mobile layout tweak */
+@media (max-width: 720px) {
+  .menu {
+    position: fixed;
+    top: 64px;
+    left: 12px;
+    right: 12px;
+    width: auto;
+  }
+}
