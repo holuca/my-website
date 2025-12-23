@@ -1,6 +1,5 @@
 import { useLanguage } from "../i18n/LanguageContext";
 import "./CV.css";
-
 export default function CV() {
   const { t } = useLanguage();
 

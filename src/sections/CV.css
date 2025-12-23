@@ -1,42 +1,84 @@
 .cv {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
+/* Section blocks (Education / Work) */
 .cv-block {
-  border: 1px solid var(--border);
-  background: var(--card);
-  border-radius: 16px;
-  padding: 14px;
+  position: relative;
+  padding-left: 28px; /* space for timeline */
 }
 
-.cv-edu { border-left: 6px solid #3b82f6; }
-.cv-work { border-left: 6px solid #22c55e; }
+/* Colored vertical line */
+.cv-block::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+/* Education vs Work colors */
+.cv-edu::before {
+  background: #3b82f6;
+}
+
+.cv-work::before {
+  background: #22c55e;
+}
 
 .cv-heading {
-  margin: 0 0 10px 0;
+  margin: 0 0 14px 0;
+  font-size: 20px;
 }
 
+/* Timeline list */
 .cv-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 12px;
+  gap: 16px;
 }
 
+/* Each timeline item */
 .cv-item {
-  padding: 10px;
+  position: relative;
+  padding: 12px 14px;
   border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--bg);
+  border-radius: 14px;
+  background: var(--card);
+}
+
+/* Timeline dot */
+.cv-item::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 16px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+/* Dot colors */
+.cv-edu .cv-item::before {
+  background: #3b82f6;
+}
+
+.cv-work .cv-item::before {
+  background: #22c55e;
 }
 
 .cv-item-top {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 12px;
+  font-weight: 600;
 }
 
 .cv-time {
@@ -52,8 +94,5 @@
 
 .cv-desc {
   margin-top: 6px;
-}
-
-@media (max-width: 900px) {
-  .cv { grid-template-columns: 1fr; }
+  line-height: 1.4;
 }

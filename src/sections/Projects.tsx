@@ -2,19 +2,17 @@ import { useLanguage } from "../i18n/LanguageContext";
 import "./Projects.css";
 
 type Project = {
-    title : string;
-    description : string;
-    image : string;
-    link? : string;
-
-
+  title: string;
+  description: string;
+  image: string;
+  link?: string;
 };
-
 
 export default function Projects() {
   const { t } = useLanguage();
 
-  const projects =  t.projects.items;
+  // Tell TS exactly what shape these items should have:
+  const projects = t.projects.items as readonly Project[];
 
   return (
     <div className="projects-grid">
@@ -29,7 +27,12 @@ export default function Projects() {
             <p className="project-desc">{p.description}</p>
 
             {p.link && (
-              <a className="project-link" href={p.link} target="_blank" rel="noreferrer">
+              <a
+                className="project-link"
+                href={p.link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {t.projects.view}
               </a>
             )}
