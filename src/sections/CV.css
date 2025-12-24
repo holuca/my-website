@@ -96,3 +96,64 @@
   margin-top: 6px;
   line-height: 1.4;
 }
+
+/* clickable description row */
+.cv-descRow {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 6px 8px;
+}
+
+.cv-descRow.clickable {
+  cursor: pointer;
+}
+
+.cv-descRow.clickable:hover {
+  background: color-mix(in srgb, var(--card) 70%, transparent);
+}
+
+.cv-descRow.clickable:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* caret */
+.cv-caret {
+  color: var(--muted);
+  font-size: 18px;
+  transform: rotate(0deg);
+  transition: transform 0.15s ease;
+  user-select: none;
+}
+
+.cv-caret.open {
+  transform: rotate(90deg);
+}
+
+/* expanded details */
+.cv-details {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: 12px;
+}
+
+.cv-detailList {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+  color: var(--text);
+}
+
+.cv-detailText {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.5;
+}
+

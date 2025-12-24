@@ -3,7 +3,7 @@ export type Lang = "en" | "de";
 export const strings = {
   en: {
     nav: {
-      about: "",
+      about: "About Me",
       projects: "Projects",
       cv: "CV",
       contact: "Contact",
@@ -11,7 +11,7 @@ export const strings = {
     },
 
     sections: {
-      aboutTitle: "Welcome to my page",
+      aboutTitle: "asdfS",
       aboutText: "Unga bunga my description...",
       projectsTitle: "Projects",
       cvTitle: "CV",
@@ -41,21 +41,28 @@ export const strings = {
       education: "Education",
       work: "Work experience",
       eduItems: [
-        {
-          title: "BSc Computer Science",
-          org: "Your University",
-          time: "2022–2025",
-          desc: "Short description",
-        },
-      ],
+      {
+        title: "BSc Computer Science",
+        org: "Your University",
+        skills: "Skills: Python, SQL ..",
+        time: "2022–2025",
+        desc: "Details",
+        details: ["Algorithms", "Probability", "ML", "Databases"], // 👈 NEW
+      },
+    ],
+
       workItems: [
         {
           title: "Intern Developer",
           org: "Company Name",
           time: "2024",
-          desc: "Short description",
+          desc: "Details",
+          details:
+            "Here you can write a longer paragraph about what you did, what stack you used, and what you learned.", // 👈 NEW
         },
       ],
+
+
     },
 
 
@@ -78,7 +85,7 @@ export const strings = {
     },
 
     sections: {
-      aboutTitle: "Luca Hollenstein",
+      aboutTitle: "",
       aboutText: "unga bunga meine beschreibung...",
       projectsTitle: "Projekte",
       cvTitle: "Lebenslauf",
@@ -110,6 +117,7 @@ export const strings = {
         {
           title: "BSc Informatik",
           org: "Deine Uni",
+          skills: "PYTHON ETC",
           time: "2022–2025",
           desc: "Kurze Beschreibung",
         },
@@ -118,6 +126,7 @@ export const strings = {
         {
           title: "Praktikum Entwickler",
           org: "Firma",
+          skills: "ASDF",
           time: "2024",
           desc: "Kurze Beschreibung",
         },
