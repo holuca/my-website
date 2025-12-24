@@ -3,7 +3,7 @@ export type Lang = "en" | "de";
 export const strings = {
   en: {
     nav: {
-      about: "About Me",
+      about: "",
       projects: "Projects",
       cv: "CV",
       contact: "Contact",
@@ -11,7 +11,7 @@ export const strings = {
     },
 
     sections: {
-      aboutTitle: "Luca Hollenstein <3",
+      aboutTitle: "Welcome to my page",
       aboutText: "Unga bunga my description...",
       projectsTitle: "Projects",
       cvTitle: "CV",

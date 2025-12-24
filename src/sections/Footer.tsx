@@ -5,7 +5,7 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
       <div className="footer-inner">
         <div>
           <div className="footer-title">{t.footer.title}</div>
