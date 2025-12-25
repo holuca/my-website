@@ -41,53 +41,52 @@ export const strings = {
   education: "Education",
   work: "Work experience",
 
-  // NEW labels for UI
-  viewBy: "View",
-  viewType: "By type",
-  viewTime: "By time",
+  // add labels for the sorting pills
+  sortType: "By type",
+  sortTime: "By time",
 
   eduItems: [
     {
+      id: "edu-bsc",              // add stable id (prevents key collisions)
       kind: "edu",
       title: "BSc Computer Science",
       org: "Your University",
       skills: "Skills: Python, SQL ..",
       start: "2022-09",
-      end: "2025-06", // null if ongoing
+      end: "2025-06",             // or null for ongoing
       time: "2022–2025",
       desc: "Details",
       details: ["Algorithms", "Probability", "ML", "Databases"],
     },
     {
+      id: "edu-msc",
       kind: "edu",
       title: "Master Computer Science",
-      org: "ETH Zürich",
+      org: "Your ETH",
       skills: "Skills: Python, SQL ..",
       start: "2025-09",
       end: null,
-      time: "2025–now",
+      time: "2025–",
       desc: "Details",
-      details: ["Systems", "Security", "Distributed Computing"],
+      details: ["Advanced Systems", "ML", "Distributed Computing"],
     },
   ],
 
   workItems: [
     {
+      id: "work-intern-dev",
       kind: "work",
       title: "Intern Developer",
       org: "Company Name",
       skills: "Stack: React, TS",
       start: "2024-03",
       end: "2024-09",
-      time: "Mar 2024 – Sep 2024",
+      time: "2024",
       desc: "Details",
       details: "Longer paragraph …",
     },
   ],
-
-
-
-    },
+},
 
 
     footer: {
@@ -134,45 +133,58 @@ export const strings = {
       ],
     },
 
-    cv: {
-  education: "Ausbildung",
-  work: "Berufserfahrung",
+  cv: {
+    education: "Ausbildung",
+    work: "Berufserfahrung",
+    sortType: "Nach Typ",
+    sortTime: "Nach Zeit",
 
-  viewBy: "Ansicht",
-  viewType: "Nach Typ",
-  viewTime: "Nach Zeit",
+    eduItems: [
+      {
+        id: "edu-bsc",
+        kind: "edu",
+        title: "BSc Informatik",
+        org: "Deine Uni",
+        skills: "Python etc.",
+        start: "2022-09",
+        end: "2025-06",
+        time: "2022–2025",
+        desc: "Details",
+        details: ["Algorithmen", "Wahrscheinlichkeit", "ML", "Datenbanken"],
+      },
+      {
+        id: "edu-msc",
+        kind: "edu",
+        title: "Master Informatik",
+        org: "Deine ETH",
+        skills: "Python etc.",
+        start: "2025-09",
+        end: null,
+        time: "2025–",
+        desc: "Details",
+        details: ["Verteilte Systeme", "ML"],
+      },
+    ],
 
-  eduItems: [
-    {
-      kind: "edu",
-      title: "BSc Informatik",
-      org: "Deine Uni",
-      skills: "Skills: Python, SQL ..",
-      start: "2022-09",
-      end: "2025-06",
-      time: "2022–2025",
-      desc: "Details",
-      details: ["Algorithmen", "Wahrscheinlichkeit", "ML", "Datenbanken"],
-    },
-  ],
-
-  workItems: [
-    {
-      kind: "work",
-      title: "Praktikum Entwickler",
-      org: "Firma",
-      skills: "Stack: React, TS",
-      start: "2024-03",
-      end: "2024-09",
-      time: "Mär 2024 – Sep 2024",
-      desc: "Details",
-      details: "Längerer Text …",
-    },
-  ],
-},
+    workItems: [
+      {
+        id: "work-intern-dev",
+        kind: "work",
+        title: "Praktikum Entwickler",
+        org: "Firma",
+        skills: "React, TS",
+        start: "2024-03",
+        end: "2024-09",
+        time: "2024",
+        desc: "Details",
+        details: "Längerer Text …",
+      },
+    ],
+},  
 
 
-    footer: {
+
+footer: {
       title: "Kontakt",
       subtitle: "Offen für neue Möglichkeiten und Zusammenarbeit",
       email: "you@example.com",

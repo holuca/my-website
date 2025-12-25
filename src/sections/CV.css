@@ -3,6 +3,11 @@
   gap: 14px;
 }
 
+.cv-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* toolbar */
 .cv-toolbar {
   display: inline-flex;
@@ -37,14 +42,13 @@
   border-color: transparent;
 }
 
-/* 2-col grid only in type mode */
+/* for type grid (not used for time)*/
 .cv-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 18px;
 }
 
-/* responsive collapse */
 @media (max-width: 820px) {
   .cv-grid {
     grid-template-columns: 1fr;
@@ -63,7 +67,6 @@
   letter-spacing: 0.3px;
 }
 
-/* list */
 .cv-list {
   list-style: none;
   padding: 0;
@@ -72,7 +75,7 @@
   gap: 12px;
 }
 
-/* item card */
+/* item cards, each normal card */
 .cv-item {
   border: 1px solid var(--border);
   background: var(--card);
@@ -83,7 +86,7 @@
   overflow: hidden;
 }
 
-/* left accent strip by type */
+/* left accent strip by type  -> change color depending on type, also needs to be expanded later, also maybe add a cute point for prettiness*/
 .cv-item::before {
   content: "";
   position: absolute;
@@ -95,7 +98,7 @@
   opacity: 0.95;
 }
 
-/* Education vs Work colors */
+/* edu vs wwork colors */
 .cv-item.edu::before {
   background: #2f7cf6;
 }
@@ -103,16 +106,15 @@
   background: #f59e0b;
 }
 
-/* top row */
 .cv-item-top {
-  display: flex;
+  display: flex; /*absolute if time stamps should be below*/
   justify-content: space-between;
   gap: 10px;
   align-items: flex-start;
 }
 
 .cv-titleRow {
-  display: flex;
+  display: flex; /*probably needed for pill thingy, maybe delete later*/
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
@@ -128,7 +130,7 @@
   white-space: nowrap;
 }
 
-/* org/skills */
+
 .cv-org {
   margin-top: 6px;
   color: var(--text);
@@ -143,7 +145,7 @@
   font-size: 0.92rem;
 }
 
-/* badge */
+/* pill thingy */
 .cv-badge {
   font-size: 0.78rem;
   font-weight: 800;
@@ -164,7 +166,6 @@
   background: rgba(245, 158, 11, 0.14);
 }
 
-/* desc row */
 .cv-descRow {
   margin-top: 10px;
   display: flex;
@@ -172,10 +173,10 @@
   justify-content: space-between;
   gap: 10px;
   padding: 10px 10px;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid transparent;
 }
-
+/*why not*/
 .cv-descRow.clickable {
   cursor: pointer;
 }
@@ -188,27 +189,70 @@
 .cv-desc {
   color: var(--text);
   opacity: 0.95;
+  font-size: 0.9rem;
+}
+.cv-caret {
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--muted);
+  transition:
+    transform 320ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 200ms ease;
+  user-select: none;
 }
 
+/* closed = pointing down, triangle 0 deg*/
 .cv-caret {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1;
-  transform: rotate(0deg);
-  transition: transform 160ms ease;
   color: var(--muted);
+  transition:
+    transform 320ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 200ms ease;
+  user-select: none;
+  transform: rotate(0deg);   /* closed: down */
 }
 
 .cv-caret.open {
-  transform: rotate(90deg);
+  transform: rotate(180deg); 
+  color: var(--text);
 }
 
-/* details */
-.cv-details {
+
+
+.cv-expand {
+  overflow: hidden;
+
+  /* when closed */
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-4px);
+
+  /*remove box inside card (borders)*/
+  margin-top: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+
+  /* keep some left/right spacing aligned with the card, otherwise looks bad */
+  padding: 0 2px;
+
+  transition:
+    max-height 520ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 260ms ease,
+    transform 260ms ease,
+    margin-top 520ms cubic-bezier(0.4, 0, 0.2, 1),
+    padding 520ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 260ms ease;
+}
+
+.cv-expand.open {
+  max-height: 520px;
+  opacity: 1;
+  transform: translateY(0);
+
   margin-top: 10px;
-  padding: 10px 12px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: rgba(127, 127, 127, 0.06);
+  padding: 0 2px;
 }
 
 .cv-detailList {
