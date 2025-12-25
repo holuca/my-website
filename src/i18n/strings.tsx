@@ -38,29 +38,53 @@ export const strings = {
     },
 
     cv: {
-      education: "Education",
-      work: "Work experience",
-      eduItems: [
-      {
-        title: "BSc Computer Science",
-        org: "Your University",
-        skills: "Skills: Python, SQL ..",
-        time: "2022–2025",
-        desc: "Details",
-        details: ["Algorithms", "Probability", "ML", "Databases"], // 👈 NEW
-      },
-    ],
+  education: "Education",
+  work: "Work experience",
 
-      workItems: [
-        {
-          title: "Intern Developer",
-          org: "Company Name",
-          time: "2024",
-          desc: "Details",
-          details:
-            "Here you can write a longer paragraph about what you did, what stack you used, and what you learned.", // 👈 NEW
-        },
-      ],
+  // NEW labels for UI
+  viewBy: "View",
+  viewType: "By type",
+  viewTime: "By time",
+
+  eduItems: [
+    {
+      kind: "edu",
+      title: "BSc Computer Science",
+      org: "Your University",
+      skills: "Skills: Python, SQL ..",
+      start: "2022-09",
+      end: "2025-06", // null if ongoing
+      time: "2022–2025",
+      desc: "Details",
+      details: ["Algorithms", "Probability", "ML", "Databases"],
+    },
+    {
+      kind: "edu",
+      title: "Master Computer Science",
+      org: "ETH Zürich",
+      skills: "Skills: Python, SQL ..",
+      start: "2025-09",
+      end: null,
+      time: "2025–now",
+      desc: "Details",
+      details: ["Systems", "Security", "Distributed Computing"],
+    },
+  ],
+
+  workItems: [
+    {
+      kind: "work",
+      title: "Intern Developer",
+      org: "Company Name",
+      skills: "Stack: React, TS",
+      start: "2024-03",
+      end: "2024-09",
+      time: "Mar 2024 – Sep 2024",
+      desc: "Details",
+      details: "Longer paragraph …",
+    },
+  ],
+
 
 
     },
@@ -111,27 +135,42 @@ export const strings = {
     },
 
     cv: {
-      education: "Ausbildung",
-      work: "Berufserfahrung",
-      eduItems: [
-        {
-          title: "BSc Informatik",
-          org: "Deine Uni",
-          skills: "PYTHON ETC",
-          time: "2022–2025",
-          desc: "Kurze Beschreibung",
-        },
-      ],
-      workItems: [
-        {
-          title: "Praktikum Entwickler",
-          org: "Firma",
-          skills: "ASDF",
-          time: "2024",
-          desc: "Kurze Beschreibung",
-        },
-      ],
+  education: "Ausbildung",
+  work: "Berufserfahrung",
+
+  viewBy: "Ansicht",
+  viewType: "Nach Typ",
+  viewTime: "Nach Zeit",
+
+  eduItems: [
+    {
+      kind: "edu",
+      title: "BSc Informatik",
+      org: "Deine Uni",
+      skills: "Skills: Python, SQL ..",
+      start: "2022-09",
+      end: "2025-06",
+      time: "2022–2025",
+      desc: "Details",
+      details: ["Algorithmen", "Wahrscheinlichkeit", "ML", "Datenbanken"],
     },
+  ],
+
+  workItems: [
+    {
+      kind: "work",
+      title: "Praktikum Entwickler",
+      org: "Firma",
+      skills: "Stack: React, TS",
+      start: "2024-03",
+      end: "2024-09",
+      time: "Mär 2024 – Sep 2024",
+      desc: "Details",
+      details: "Längerer Text …",
+    },
+  ],
+},
+
 
     footer: {
       title: "Kontakt",
