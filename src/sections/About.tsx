@@ -1,6 +1,6 @@
 
 import { useLanguage } from "../i18n/LanguageContext";
-import me from "../../assets/profile.jpg"
+import me from "/about/profile.jpg"
 import "./About.css";
 
 export default function About(){
