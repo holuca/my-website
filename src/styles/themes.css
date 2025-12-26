@@ -9,6 +9,7 @@
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 
   --accent: #560fda;
+  --smallAccent: #3f07da;
   --accent-contrast: #ffffff;
 
   --menu-link-bg: #1a1a1d;
@@ -30,6 +31,7 @@
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 
   --accent: #7c4dff;
+  --smallAccent: #bca2f0;
   --accent-contrast: #ffffff;
 
   --menu-link-bg: #15151b;

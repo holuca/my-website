@@ -12,7 +12,7 @@
 }
 
 .project-thumb {
-  height: 160px;
+  aspect-ratio: 16 / 9; 
   background: rgba(0,0,0,.05);
 }
 
@@ -41,6 +41,81 @@
   color: var(--accent);
   font-weight: 600;
 }
+.project-abst{
+  margin: 0 0 10px 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+
+.project-abstractRow {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  padding: 10px 0px;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.project-abstractRow:hover {
+  border-color: var(--border);
+  background: rgba(127, 127, 127, 0.06);
+}
+
+.project-abstractLabel {
+  color: var(--text);
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.project-expand {
+  overflow: hidden;
+
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-4px);
+
+  margin-top: 0;
+  padding: 0 10px;
+
+  transition:
+    max-height 260ms linear,
+    opacity 160ms ease,
+    transform 160ms ease,
+    margin-top 260ms linear,
+    padding 260ms linear;
+}
+
+.project-expand.open {
+  max-height: 820px; 
+  opacity: 1;
+  transform: translateY(0);
+
+  margin-top: 8px;
+  padding: 8px 10px;
+}
+
+.project-abstractText {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.project-inlineLink {
+  color: var(--smallAccent);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.project-inlineLink:hover {
+  text-decoration: underline;
+}
+
 
 @media (max-width: 980px) {
   .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
