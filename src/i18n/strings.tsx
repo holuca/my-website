@@ -36,6 +36,7 @@ export const strings = {
           abstractLabel: "Description",
           abstract: "The observed people come from a group of high intelect and various fields and gayness spectrum. The cases of Tim and Jannis are already widely known as openly admited sub-gays, so we leave those 2 out of this following discussion. Many observation show that Nudel, Heider, Aron and Luca are clearly drawn to men. They are drawn to long big things, tell non-jokingly how they would marry each other and also openly kissed each other. The common trait is their manliness hindering them to admit it, which causes this type, the half-admitted-dom-gay. The case of Felix is a intersting one, as it is not clear as the others. Thats a new type, which i call 'non openly addmitting sub gay'. This is the type fantasizing secretly about being dominated, but hiding it by having a girlfriend. Lastly there is subject number 6: Khiem. He openly admits to be dominated by a bigger woman, but as a matter of fact he can not prove his straighness nor his gayness. This study is still ungoing for this subject.",
           image: "/projects/project2.png",
+          link: "https://affirmativehairsolutions.com/gay-bald-men-hair-transplant/"
         },
          {
           title: "Master Thesis",
@@ -43,7 +44,6 @@ export const strings = {
           abstractLabel: "Abstract",
           abstract: "Understanding the composition of airborne particulate matter is essential for assessing air quality, tracing pollution sources, and informing environmental policies. In particular, quantifying the concentration of chemical species such as nitrate, sulfate, organic carbon, and metals is critical for regulatory and health-related monitoring. These species are often composed of many different subspecies whose spectral signals are difficult to disentangle because they overlap in their spectral profile, especially in complex atmospheric samples. This work presents a probabilistic model for spectral decomposition and species quantification. The model reconstructs observed spectra and predicts concentrations of the species while learning interpretable profiles for chemical subspecies. Each spectrum is modeled as a combi- nation of background structure and subspecies contributions, mapped via a known profile matrix to observable targets. Training is performed using Stochastic Variational Inference (SVI), en- abling scalable learning on complex data. Real-world experiments demonstrate strong predictive performance, outperforming classical baselines like PLS1 and PLS2 on most species, while maintaining high spectral reconstruction fidelity. Synthetic evaluations show that latent subspecies profiles can be recovered really well, however, the correct prediction of subspecies concentration remains challenging even with a supervised model, because of an identifiability issue of the subspecies to species mapping. Our analysis highlights the strengths of probabilistic modeling in terms of interpretability and uncertainty quantification, while also noting trade-offs in terms of convergence and model complexity. Future work may explore more efficient subspecies supervision, hybrid priors, or hierarchical extensions to improve latent disentanglement and data efficiency.",
           image: "/projects/overview.png",
-          link: "https://affirmativehairsolutions.com/gay-bald-men-hair-transplant/",
         },
         {
           title: "Semester Project: Laminography-Adapted NAF",
@@ -186,7 +186,7 @@ export const strings = {
       projectsTitle: "Projekte",
       cvTitle: "Lebenslauf",
       contactTitle: "Kontakt",
-      contactText: "E-Mail: you@example.com",
+      contactText: "E-Mail: lucahollenstein4@gmail.com",
     },
 
     projects: {
@@ -206,6 +206,7 @@ export const strings = {
           abstractLabel: "Description",
           abstract: "The observed people come from a group of high intelect and various fields and gayness spectrum. The cases of Tim and Jannis are already widely known as openly admited sub-gays, so we leave those 2 out of this following discussion. Many observation show that Nudel, Heider, Aron and Luca are clearly drawn to men. They are drawn to long big things, tell non-jokingly how they would marry each other and also openly kissed each other. The common trait is their manliness hindering them to admit it, which causes this type, the half-admitted-dom-gay. The case of Felix is a intersting one, as it is not clear as the others. Thats a new type, which i call 'non openly addmitting sub gay'. This is the type fantasizing secretly about being dominated, but hiding it by having a girlfriend. Lastly there is subject number 6: Khiem. He openly admits to be dominated by a bigger woman, but as a matter of fact he can not prove his straighness not his gayness. This study is still ungoing for this subject.",
           image: "/projects/project2.png",
+          link: "https://affirmativehairsolutions.com/gay-bald-men-hair-transplant/"
         },
          {
           title: "Master Thesis",
@@ -214,7 +215,6 @@ export const strings = {
           abstract:
           "Das Verständnis der Zusammensetzung von luftgetragenem Feinstaub ist entscheidend für die Bewertung der Luftqualität, die Identifikation von Emissionsquellen und die Ausgestaltung umweltpolitischer Massnahmen. Insbesondere die Quantifizierung der Konzentration chemischer Spezies wie Nitrat, Sulfat, organischer Kohlenstoff und Metalle ist für regulatorische und gesundheitsbezogene Überwachungsaufgaben von zentraler Bedeutung. Diese Spezies bestehen häufig aus vielen unterschiedlichen Subspezien, deren spektrale Signale sich überlagern und insbesondere in komplexen atmosphärischen Proben nur schwer voneinander zu trennen sind.  Diese Arbeit stellt ein probabilistisches Modell zur spektralen Zerlegung und Quantifizierung chemischer Spezies vor. Das Modell rekonstruiert beobachtete Spektren und sagt die Konzentrationen der Spezies voraus, während es gleichzeitig interpretierbare Profile für chemische Subspezien erlernt. Jedes Spektrum wird als Kombination aus Hintergrundstruktur und Beiträgen der Subspezien modelliert, die über eine bekannte Profilmatrix auf beobachtbare Zielgrössen abgebildet werden. Das Training erfolgt mittels Stochastic Variational Inference (SVI), wodurch skalierbares Lernen auf komplexen Datensätzen ermöglicht wird. Experimente mit realen Daten zeigen eine starke Vorhersageleistung, wobei klassische Baseline-Methoden wie PLS1 und PLS2 für die meisten Spezies übertroffen werden, während gleichzeitig eine hohe spektrale Rekonstruktionsgenauigkeit erhalten bleibt. Synthetische Evaluierungen zeigen, dass latente Subspezienprofile sehr gut rekonstruiert werden können; die korrekte Vorhersage der Subspezienkonzentrationen bleibt jedoch selbst in einem überwachten Setting herausfordernd, was auf ein Identifizierbarkeitsproblem bei der Abbildung von Subspezien auf Spezies zurückzuführen ist. Die Analyse hebt die Stärken probabilistischer Modellierung im Hinblick auf Interpretierbarkeit und Unsicherheitsquantifizierung hervor, weist jedoch auch auf Zielkonflikte in Bezug auf Konvergenzverhalten und Modellkomplexität hin. Zukünftige Arbeiten könnten effizientere Formen der Subspezien-Supervision, hybride Prioren oder hierarchische Erweiterungen untersuchen, um die latente Entflechtung und Dateneffizienz weiter zu verbessern.",
           image: "/projects/overview.png",
-          link: "https://affirmativehairsolutions.com/gay-bald-men-hair-transplant/",
         },
         {
           title: "Semester Projekt: Laminography-Adapted NAF",
