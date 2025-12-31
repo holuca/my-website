@@ -22,25 +22,10 @@ export const strings = {
     projects: {
       view: "View project",
       items: [
-        {
-          title: "Life Project",
-          description: "It is an art form to perform poorly under pressure. This project documents the quiet tragedy of competitive stagnation and the noble struggle of attempting to escape Iron elo. What you see here is a chronicle of persistence, misplaced confidence, and the unwavering belief that this game will finally be the one that changes everything.",
-          abstractLabel: "description",
-          abstract: "This work explores the behavioral patterns of players who remain in Iron elo. Iron elo represents a unique competitive environment in which consistency is achieved not through improvement, but through repetition. Players exhibit a remarkable ability to survive without learning core mechanics, often relying on comfort picks, optimistic pings, and the belief that elo hell is real. Common charasteristics are the missing thrill of living on the edge and overly smooth brainstructures. They tend to stay safe in the known waters, never exploring more then they need to, and remain happy in their ecosystem: the wood rank. This elo has been newly introduced as it has been shown that more and more player are bad and its a fascination place where ambition and execution rarely align. Despite repeated setbacks and well-documented limitations, the subject continues to queue, driven by hope. This project is presented as a lighthearted observation of competitive perseverance, illustrating that while skill ceiling may exist, determination and denial know no bounds.",
-          image: "/projects/project1.png",
-          link: "https://op.gg/lol/summoners/euw/ObeyYourMistress-EUW"
-        },
-        {
-          title: "The secret Gays",
-          description: "Many men, especially those who have a girlfirend are secretly gay. To prove this claim it many rigorous studies have been coducted and it has shown that in case of 80% of the oberved people have shown affection to the same gender. The other 20% were already known to be bisexual.",
-          abstractLabel: "Description",
-          abstract: "The observed people come from a group of high intelect and various fields and gayness spectrum. The cases of Tim and Jannis are already widely known as openly admited sub-gays, so we leave those 2 out of this following discussion. Many observation show that Nudel, Heider, Aron and Luca are clearly drawn to men. They are drawn to long big things, tell non-jokingly how they would marry each other and also openly kissed each other. The common trait is their manliness hindering them to admit it, which causes this type, the half-admitted-dom-gay. The case of Felix is a intersting one, as it is not clear as the others. Thats a new type, which i call 'non openly addmitting sub gay'. This is the type fantasizing secretly about being dominated, but hiding it by having a girlfriend. Lastly there is subject number 6: Khiem. He openly admits to be dominated by a bigger woman, but as a matter of fact he can not prove his straighness nor his gayness. This study is still ungoing for this subject.",
-          image: "/projects/project2.png",
-          link: "https://affirmativehairsolutions.com/gay-bald-men-hair-transplant/"
-        },
+        
          {
-          title: "Master Thesis",
-          description: "In this Master Thesis i learned how to work with probabilistic models, especially using the library Pyro. I can sadly not show you the workk as it is still confidential.",
+          title: "Master Thesis: ChemSpec Variational Inference",
+          description: "In this Master Thesis i learned how to work with probabilistic models, especially using the library Pyro. I can sadly not show you the work as it is still confidential.",
           abstractLabel: "Abstract",
           abstract: "Understanding the composition of airborne particulate matter is essential for assessing air quality, tracing pollution sources, and informing environmental policies. In particular, quantifying the concentration of chemical species such as nitrate, sulfate, organic carbon, and metals is critical for regulatory and health-related monitoring. These species are often composed of many different subspecies whose spectral signals are difficult to disentangle because they overlap in their spectral profile, especially in complex atmospheric samples. This work presents a probabilistic model for spectral decomposition and species quantification. The model reconstructs observed spectra and predicts concentrations of the species while learning interpretable profiles for chemical subspecies. Each spectrum is modeled as a combi- nation of background structure and subspecies contributions, mapped via a known profile matrix to observable targets. Training is performed using Stochastic Variational Inference (SVI), en- abling scalable learning on complex data. Real-world experiments demonstrate strong predictive performance, outperforming classical baselines like PLS1 and PLS2 on most species, while maintaining high spectral reconstruction fidelity. Synthetic evaluations show that latent subspecies profiles can be recovered really well, however, the correct prediction of subspecies concentration remains challenging even with a supervised model, because of an identifiability issue of the subspecies to species mapping. Our analysis highlights the strengths of probabilistic modeling in terms of interpretability and uncertainty quantification, while also noting trade-offs in terms of convergence and model complexity. Future work may explore more efficient subspecies supervision, hybrid priors, or hierarchical extensions to improve latent disentanglement and data efficiency.",
           image: "/projects/overview.png",
@@ -192,24 +177,8 @@ export const strings = {
     projects: {
       view: "Project Ansehen",
       items: [
-        {
-          title: "Life Project",
-          description: "It is an art form to perform poorly under pressure. This project documents the quiet tragedy of competitive stagnation and the noble struggle of attempting to escape Iron elo. What you see here is a chronicle of persistence, misplaced confidence, and the unwavering belief that this game will finally be the one that changes everything.",
-          abstractLabel: "description",
-          abstract: "This work explores the behavioral patterns of players who remain in Iron elo. Iron elo represents a unique competitive environment in which consistency is achieved not through improvement, but through repetition. Players exhibit a remarkable ability to survive without learning core mechanics, often relying on comfort picks, optimistic pings, and the belief that elo hell is real. Common charasteristics are the missing thrill of living on the edge and overly smooth brainstructures. They tend to stay safe in the known waters, never exploring more then they need to, and remain happy in their ecosystem: the wood rank. This elo has been newly introduced as it has been shown that more and more player are bad and its a fascination place where ambition and execution rarely align. Despite repeated setbacks and well-documented limitations, the subject continues to queue, driven by hope. This project is presented as a lighthearted observation of competitive perseverance, illustrating that while skill ceiling may exist, determination and denial know no bounds.",
-          image: "/projects/project1.png",
-          link: "https://op.gg/lol/summoners/euw/ObeyYourMistress-EUW"
-        },
-        {
-          title: "The secret Gays",
-          description: "Many men, especially those who have a girlfirend are secretly gay. To prove this claim it many rigorous studies have been coducted and it has shown that in case of 80% of the oberved people have shown affection to the same gender. The other 20% were already known to be bisexual.",
-          abstractLabel: "Description",
-          abstract: "The observed people come from a group of high intelect and various fields and gayness spectrum. The cases of Tim and Jannis are already widely known as openly admited sub-gays, so we leave those 2 out of this following discussion. Many observation show that Nudel, Heider, Aron and Luca are clearly drawn to men. They are drawn to long big things, tell non-jokingly how they would marry each other and also openly kissed each other. The common trait is their manliness hindering them to admit it, which causes this type, the half-admitted-dom-gay. The case of Felix is a intersting one, as it is not clear as the others. Thats a new type, which i call 'non openly addmitting sub gay'. This is the type fantasizing secretly about being dominated, but hiding it by having a girlfriend. Lastly there is subject number 6: Khiem. He openly admits to be dominated by a bigger woman, but as a matter of fact he can not prove his straighness not his gayness. This study is still ungoing for this subject.",
-          image: "/projects/project2.png",
-          link: "https://affirmativehairsolutions.com/gay-bald-men-hair-transplant/"
-        },
          {
-          title: "Master Thesis",
+          title: "Master Thesis: ChemSpec Variational Inference",
           description: "In meiner Masterarbeit habe ich gelernt, mit probabilistischen Modellen zu arbeiten, insbesondere unter Verwendung der Bibliothek Pyro. Leider kann ich diese Arbeit nicht öffentlich zeigen, da sie noch vertraulich ist.",
           abstractLabel: "Abstract",
           abstract:
