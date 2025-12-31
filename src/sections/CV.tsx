@@ -31,8 +31,7 @@ export default function CV() {
   const [mode, setMode] = useState<SortMode>("type");
   const [openKey, setOpenKey] = useState<string | null>(null);
 
-  // If your LanguageContext typing isn't strict, this avoids the readonly-cast pain.
-  // Once your i18n types are strict, you can remove the `as unknown as`.
+  // i18n not strict yet, so this is easier
   const eduItems = (t.cv.eduItems ?? []) as unknown as CVItem[];
   const workItems = (t.cv.workItems ?? []) as unknown as CVItem[];
 
@@ -43,7 +42,7 @@ export default function CV() {
   const timelineItems = useMemo(() => {
     const all = [...eduItems, ...workItems];
 
-    // Sort: ongoing first, then most recent end/start
+    // ongoing first, then most recent end/start
     return all.sort((a, b) => {
       const aEnd = a.end ? parseYYYYMM(a.end) : Infinity;
       const bEnd = b.end ? parseYYYYMM(b.end) : Infinity;
@@ -124,7 +123,6 @@ export default function CV() {
 
   return (
     <div className="cv">
-      {/* pills right-aligned */}
       <div className="cv-header">
         <div className="cv-toolbar" role="tablist" aria-label="CV sorting">
           <button

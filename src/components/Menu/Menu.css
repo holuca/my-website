@@ -16,12 +16,10 @@
   z-index: 50;
 }
 
-/* Slide in */
 .menu.open {
   transform: translateX(0);
 }
 
-/* Internal layout */
 .menu-content {
   height: 100%;
   display: flex;
@@ -29,14 +27,12 @@
   padding: 16px;
 }
 
-/* Navigation at top */
 .menu-nav {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-/* Navigation buttons */
 .menu-link {
   text-align: left;
   padding: 12px 14px;
@@ -54,7 +50,6 @@
   border-color: var(--accent);
 }
 
-/* Push language switch to bottom */
 .menu-bottom {
   margin-top: auto;
   padding-top: 16px;
@@ -85,7 +80,6 @@
   border-color: var(--accent);
 }
 
-/* Overlay */
 .menu-overlay {
   position: fixed;
   inset: 0;
@@ -101,7 +95,6 @@
   pointer-events: auto;
 }
 
-/* Mobile: menu slightly narrower */
 @media (max-width: 720px) {
   .menu {
     width: 220px;

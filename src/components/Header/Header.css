@@ -52,7 +52,6 @@
   display: block;
 }
 
-/* Desktop: floating header */
 @media (min-width: 1300px) {
   .header {
     top: 12px;

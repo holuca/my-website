@@ -39,7 +39,6 @@ export default function Projects() {
               <h3 className="project-title">{p.title}</h3>
               <p className="project-desc">{p.description}</p>
 
-              {/* expandable button */}
               <div
                 className={`project-abstractRow ${isOpen ? "open" : ""}`}
                 role="button"

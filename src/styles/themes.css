@@ -19,7 +19,6 @@
   --overlay: rgba(0, 0, 0, 0.35);
 }
 
-/* Dark mode (later we’ll toggle this by adding .dark to <html>) */
 :root.dark {
   --bg: #0b0b0f;
   --text: #f4f4f5;
