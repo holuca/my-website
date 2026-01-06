@@ -60,6 +60,17 @@ export const strings = {
           image: "/projects/BachelorThesis.jpg",
           link: "https://https://github.com/holuca/BT_Visual_Perception_Of_GAN_Generated_Indeterminate_Images.com",
         },
+        {
+        title: "Neuralising the CYK Parser (Deep Learning Project)",
+        description:
+          "Group project from the Deep Learning course. We implemented a differentiable (“neuralized”) version of the classical CYK parser and compared it against LSTM and Transformer baselines. My main contribution focused on the LSTM baseline and experiments.",
+        abstractLabel: "Abstract",
+        abstract:
+          "The CYK algorithm can decide whether a given string of any length is in a given context-free grammar or not. However, its use cases are limited, because the production grammar must be available as an input parameter, hence the algorithm being inapplicable in scenarios where the context-free grammar is unknown. In this work, we build a neuralized version of the classical CYK algorithm, such that it can learn and generalize to more softly defined predictions. To that end, we build a neuralized version of the classical CYK Parser, which can learn purely by examples and can be trained end-to-end in a supervised setting.",
+        image: "/projects/cyk_parser.png",
+        link: "https://github.com/jnice-81/DLCykParser",
+      },
+
       ],
     },
 
@@ -215,6 +226,17 @@ export const strings = {
           image: "/projects/BachelorThesis.jpg",
           link: "https://https://github.com/holuca/BT_Visual_Perception_Of_GAN_Generated_Indeterminate_Images.com",
         },
+        {
+          title: "Neuralising the CYK Parser (Deep-Learning-Projekt)",
+          description:
+            "Gruppenprojekt aus dem Kurs Deep Learning. Wir haben eine differenzierbare („neuralisierte“) Version des klassischen CYK-Parsers implementiert und sie mit LSTM- und Transformer-Baselines verglichen. Mein Hauptbeitrag lag beim LSTM-Teil und den Experimenten.",
+          abstractLabel: "Abstract",
+          abstract:
+            "Der CYK-Algorithmus kann entscheiden, ob eine gegebene Zeichenkette beliebiger Länge in einer gegebenen kontextfreien Grammatik enthalten ist. Seine Einsatzmöglichkeiten sind jedoch begrenzt, da die Produktionsgrammatik als Eingabeparameter verfügbar sein muss und der Algorithmus daher in Szenarien nicht anwendbar ist, in denen die kontextfreie Grammatik unbekannt ist. In dieser Arbeit entwickeln wir eine „neuralisierte“ Version des klassischen CYK-Algorithmus, sodass sie aus Beispielen lernen und auf weichere Vorhersagen generalisieren kann. Dazu konstruieren wir eine neuralisierte Version des klassischen CYK-Parsers, die rein aus Beispielen lernen kann und in einem überwachten Setting end-to-end trainierbar ist.",
+          image: "/projects/cyk_parser.png",
+          link: "https://github.com/jnice-81/DLCykParser",
+        },
+
       ],
     },
 
